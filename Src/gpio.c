@@ -34,10 +34,16 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "gpio.h"
+/* USER CODE BEGIN 0 */
+
+/* USER CODE END 0 */
 
 /*----------------------------------------------------------------------------*/
 /* Configure GPIO                                                             */
 /*----------------------------------------------------------------------------*/
+/* USER CODE BEGIN 1 */
+
+/* USER CODE END 1 */
 
 /** Configure pins
      PE3   ------> FSMC_A19
@@ -89,8 +95,6 @@
      PG3   ------> FSMC_A13
      PG4   ------> FSMC_A14
      PG5   ------> FSMC_A15
-     PA9   ------> USART1_TX
-     PA10   ------> USART1_RX
      PC10   ------> UART4_TX
      PC11   ------> UART4_RX
      PC12   ------> UART5_TX
@@ -164,16 +168,16 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(OneNAND_INT_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PAPin PAPin PAPin */
-  GPIO_InitStruct.Pin = USART2_CTS_Pin|USART2_RX_Pin|USART1_RX_Pin;
+  /*Configure GPIO pins : PAPin PAPin */
+  GPIO_InitStruct.Pin = USART2_CTS_Pin|USART2_RX_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PAPin PAPin PAPin PAPin 
-                           PAPin PAPin */
+                           PAPin */
   GPIO_InitStruct.Pin = USART2_RTS_Pin|USART2_TX_Pin|Flash_SCK_Pin|Flash_MISO_Pin 
-                          |Flash_MOSI_Pin|USART1_TX_Pin;
+                          |Flash_MOSI_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
@@ -316,5 +320,17 @@ void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(IrDA_SD_GPIO_Port, IrDA_SD_Pin, GPIO_PIN_RESET);
 
 }
+
+/* USER CODE BEGIN 2 */
+
+/* USER CODE END 2 */
+
+/**
+  * @}
+  */
+
+/**
+  * @}
+  */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
