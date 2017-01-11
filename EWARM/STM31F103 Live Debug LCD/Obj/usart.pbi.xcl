@@ -1,4 +1,4 @@
-"C:\Users\Tyler\Documents\Projects\LCD-SerialVisualizer\Src\main.c"
+"C:\Users\Tyler\Documents\Projects\LCD-SerialVisualizer\Src\usart.c"
 -std=c99
 -ferror-limit=100
 -I

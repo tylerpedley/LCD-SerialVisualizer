@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\common\bin\cspybat" -f "C:\Users\Tyler\Desktop\STM31F103 Live Debug LCD\EWARM\settings\STM31F103 Live Debug LCD.STM31F103_Live_Debug_LCD.general.xcl" --backend -f "C:\Users\Tyler\Desktop\STM31F103 Live Debug LCD\EWARM\settings\STM31F103 Live Debug LCD.STM31F103_Live_Debug_LCD.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\common\bin\cspybat" -f "C:\Users\Tyler\Documents\Projects\LCD-SerialVisualizer\EWARM\settings\STM31F103 Live Debug LCD.STM31F103_Live_Debug_LCD.general.xcl" --backend -f "C:\Users\Tyler\Documents\Projects\LCD-SerialVisualizer\EWARM\settings\STM31F103 Live Debug LCD.STM31F103_Live_Debug_LCD.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\common\bin\cspybat" -f "C:\Users\Tyler\Desktop\STM31F103 Live Debug LCD\EWARM\settings\STM31F103 Live Debug LCD.STM31F103_Live_Debug_LCD.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\Tyler\Desktop\STM31F103 Live Debug LCD\EWARM\settings\STM31F103 Live Debug LCD.STM31F103_Live_Debug_LCD.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\common\bin\cspybat" -f "C:\Users\Tyler\Documents\Projects\LCD-SerialVisualizer\EWARM\settings\STM31F103 Live Debug LCD.STM31F103_Live_Debug_LCD.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\Tyler\Documents\Projects\LCD-SerialVisualizer\EWARM\settings\STM31F103 Live Debug LCD.STM31F103_Live_Debug_LCD.driver.xcl" 
 
 @echo off 
 :end
