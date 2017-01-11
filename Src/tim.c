@@ -35,6 +35,10 @@
 /* Includes ------------------------------------------------------------------*/
 #include "tim.h"
 
+/* USER CODE BEGIN 0 */
+
+/* USER CODE END 0 */
+
 TIM_HandleTypeDef htim6;
 
 /* TIM6 init function */
@@ -91,5 +95,17 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
 
   /* USER CODE END TIM6_MspDeInit 1 */
 } 
+
+/* USER CODE BEGIN 1 */
+
+/* USER CODE END 1 */
+
+/**
+  * @}
+  */
+
+/**
+  * @}
+  */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
